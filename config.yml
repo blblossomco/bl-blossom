@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Content"
+    files:
+      - file: "content.json"
+        label: "Site Settings"
+        name: "site"
+        description: "Everything here updates the live website as soon as you save."
+        fields:
+          - { label: "🔔 Announcement Banner", name: "announcement_enabled", widget: "boolean", default: false, hint: "Turn ON to show a banner message at the top of every page" }
+          - { label: "Announcement Text", name: "announcement_text", widget: "string", required: false, hint: "e.g. October Special — 10% Off" }
+
+          - { label: "💲 Show Prices Publicly", name: "show_prices", widget: "boolean", default: false, hint: "Leave OFF unless you decide to advertise prices again" }
+
+          - { label: "⭐ Show Reviews Section", name: "show_reviews", widget: "boolean", default: false, hint: "Turn ON once you've added at least one review below" }
+
+          - { label: "📸 Instagram URL", name: "instagram_url", widget: "string" }
+          - { label: "🎵 TikTok URL", name: "tiktok_url", widget: "string" }
+          - { label: "✉️ Contact Email", name: "contact_email", widget: "string" }
+
+          - { label: "Mini Blossom — Description", name: "mini_description", widget: "text", required: false, hint: "Leave blank to keep the current wording" }
+          - { label: "Mini Blossom — Price (only shown if prices are ON above)", name: "mini_price", widget: "string", required: false }
+          - { label: "Mini Blossom — Available", name: "mini_available", widget: "boolean", default: true, hint: "Turn OFF to show a Currently Unavailable tag" }
+          - { label: "Mini Blossom — Photo", name: "mini_image_url", widget: "image", required: false, choose_url: false }
+
+          - { label: "Sweet Blossom — Description", name: "sweet_description", widget: "text", required: false }
+          - { label: "Sweet Blossom — Price (only shown if prices are ON above)", name: "sweet_price", widget: "string", required: false }
+          - { label: "Sweet Blossom — Available", name: "sweet_available", widget: "boolean", default: true }
+          - { label: "Sweet Blossom — Photo", name: "sweet_image_url", widget: "image", required: false, choose_url: false }
+
+          - { label: "Signature Blossom — Description", name: "signature_description", widget: "text", required: false }
+          - { label: "Signature Blossom — Price (only shown if prices are ON above)", name: "signature_price", widget: "string", required: false }
+          - { label: "Signature Blossom — Available", name: "signature_available", widget: "boolean", default: true }
+          - { label: "Signature Blossom — Photo", name: "signature_image_url", widget: "image", required: false, choose_url: false }
+
+          - { label: "Luxe Blossom — Description", name: "luxe_description", widget: "text", required: false }
+          - { label: "Luxe Blossom — Price (only shown if prices are ON above)", name: "luxe_price", widget: "string", required: false }
+          - { label: "Luxe Blossom — Available", name: "luxe_available", widget: "boolean", default: true }
+          - { label: "Luxe Blossom — Photo", name: "luxe_image_url", widget: "image", required: false, choose_url: false }
+
+          - { label: "Custom Luxury — Description", name: "custom_description", widget: "text", required: false }
+          - { label: "Custom Luxury — Price (only shown if prices are ON above)", name: "custom_price", widget: "string", required: false }
+          - { label: "Custom Luxury — Available", name: "custom_available", widget: "boolean", default: true }
+          - { label: "Custom Luxury — Photo", name: "custom_image_url", widget: "image", required: false, choose_url: false }
+
+          - { label: "Review 1 — Quote", name: "review1_quote", widget: "text", required: false }
+          - { label: "Review 1 — From (e.g. Birthday Basket, Henderson NV)", name: "review1_attr", widget: "string", required: false }
+          - { label: "Review 2 — Quote", name: "review2_quote", widget: "text", required: false }
+          - { label: "Review 2 — From", name: "review2_attr", widget: "string", required: false }
+          - { label: "Review 3 — Quote", name: "review3_quote", widget: "text", required: false }
+          - { label: "Review 3 — From", name: "review3_attr", widget: "string", required: false }
+          - { label: "Review 4 — Quote", name: "review4_quote", widget: "text", required: false }
+          - { label: "Review 4 — From", name: "review4_attr", widget: "string", required: false }
+          - { label: "Review 5 — Quote", name: "review5_quote", widget: "text", required: false }
+          - { label: "Review 5 — From", name: "review5_attr", widget: "string", required: false }
