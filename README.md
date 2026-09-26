@@ -7,6 +7,7 @@ Everything for your website is in this folder, ready to upload to GitHub exactly
 - `content.json` — the file your future login dashboard edits
 - `admin/` — your login dashboard (keep this folder as-is)
 - `images/uploads/` — where photos you upload later will land (keep this folder, even though it's empty for now)
+- `images/gallery/` — the "our work" photo section on the homepage. Two of your real photos are already in here (`fall-harvest-gift-basket.jpg` and `pink-romantic-gift-basket.jpg`). Two more spots are ready for photos you haven't added yet — just save your photo using the exact file name shown on the placeholder box (`flower-arrangement-1.jpg` and `bridal-wedding-gift-1.jpg`) and upload it into this same `images/gallery` folder. No code editing needed — the website will automatically show your photo in place of the placeholder text.
 
 ## Quick start: getting this onto GitHub
 
